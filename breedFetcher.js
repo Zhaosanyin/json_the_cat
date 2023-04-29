@@ -29,7 +29,7 @@ request(url, (error, response, body) => {
   const data = JSON.parse(body);
   if (data.length === 0) {
     console.log(`Breed "${breedName}" not found`);
-    process.exit();  
+    process.exit();
     // return;
   }
   console.log(data[0].description);
